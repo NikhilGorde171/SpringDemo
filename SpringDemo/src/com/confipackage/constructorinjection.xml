@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEANS 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="traingle" class="com.nik.constructorinjection.Traingle" >
+	
+	 <!--	<constructor-arg value="RightAngled "/> -->  <!-- constructor injection-->	<!-- Here container find constructor which accept of type string and assign the value -->
+		<!-- the int value is also passes as ""String but spring is smart enough to  assign the value to int type in constructor-->
+		<!-- In the spring as both int and spring are sent as string theirfore for int datatype is mentioned directly to avoid ambuigity  -->
+		
+	    <!--  <constructor-arg type="int" value="20"/> -->
+	   
+	   <!-- Calling a constructor with many values -->	
+		<constructor-arg index="0" value="Eqilateral" />
+		<constructor-arg index="1" value="30" />
+	</bean>
+</beans>

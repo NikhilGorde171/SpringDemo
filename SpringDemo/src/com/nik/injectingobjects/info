@@ -1,0 +1,6 @@
+Aim-injeccting an object here point obj is injected in obj traingle
+getbean(tr..) gets called.
+in injectingObj..xml traingle gets created but while initializing prop ref is made to point obj.
+therefore point obj also start initializing.
+all return to traingle obj.
+in main class i.e drawingApp no change are done also need not change if points of traingle increses or anything

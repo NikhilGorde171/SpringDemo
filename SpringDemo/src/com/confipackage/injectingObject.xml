@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEANS 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="traingle" class="com.nik.injectingobjects.Traingle">
+	<property name="pointA" ref="p1" />
+	<property name="pointB" ref="p2" />
+	<property name="pointC" ref="p3" />
+	</bean>
+	
+	<bean id="p1" class="com.nik.injectingobjects.Point">
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+	
+	<bean id="p2" class="com.nik.injectingobjects.Point">
+		<property name="x" value="0" />
+		<property name="y" value="10" />
+	</bean>
+	
+	<bean id="p3" class="com.nik.injectingobjects.Point">
+		<property name="x" value="10" />
+		<property name="y" value="10" />
+	</bean>
+
+</beans>
